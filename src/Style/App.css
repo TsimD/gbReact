@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.renderMessage{
+  text-align: center;
+}
+.container{
+  text-align: center;
+}
+.button{
+  background-color: aquamarine;
+}
+.form{
+  display: flex;
+  justify-content: center;
+
+}
