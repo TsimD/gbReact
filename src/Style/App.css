@@ -40,14 +40,12 @@
 .renderMessage{
   text-align: center;
 }
-.container{
-  text-align: center;
-}
-.button{
-  background-color: aquamarine;
-}
-.form{
+.conteiner{
+  width: 1200px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
 
+
 }
+
