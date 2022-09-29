@@ -4,7 +4,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import FolderSharedIcon from '@mui/icons-material/FolderShared';
-import "./Style/Chats.css"
+import "../Style/Chats.css"
 
 
 function Chats ({chats}) {
@@ -14,6 +14,7 @@ function Chats ({chats}) {
     {
       chats.map(el=>{
         return(<List>
+
                   <ListItem>
                     <ListItemIcon>
                       <FolderSharedIcon/>

@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import "./Style/Message.css";
+import "../Style/Message.css";
 import SendIcon from '@mui/icons-material/Send';
 import {TextField, Button} from '@mui/material';
 import CardContent from '@mui/material/CardContent';
