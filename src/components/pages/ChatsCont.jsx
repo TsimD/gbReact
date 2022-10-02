@@ -1,14 +1,13 @@
 import React from 'react';
 import Chats from "../Chats";
-import Message from "../Message";
+// import Message from "../Message";
 
-function ChatsCont ({chats}) {
+function ChatsCont () {
   return (
       <div className="conteiner">
-        <Chats chats={chats}/>
-        <Message/>
-
-      </div>
+        <Chats />
+        {/*<Message/>*/}
+ </div>
   );
 }
 
