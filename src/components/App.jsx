@@ -5,30 +5,21 @@ import Layout from "./Layout";
 import Profile from "./pages/Profile";
 import ChatsCont from "./pages/ChatsCont";
 import HomePage from "./pages/HomePage";
+import NotFoundPage from "./pages/NotFoundPage";
+import SingleChat from "./pages/SingleChat";
 
 
 function App () {
 
-  const chats =
-      [{
-        id: '',
-        name: 'Друзья'
-      }, {
-        id: '',
-        name: 'Семья'
-
-      }, {
-        id: '',
-        name: 'Работа'
-
-      }];
 
   return (
       <Routes>
         <Route path={'/'} element={<Layout/>}>
           <Route index element={<HomePage/>}/>
           <Route path={'/profile'} element={<Profile/>}/>
-          <Route path={'/chats'} element={<ChatsCont chats={chats}/>}/>
+          <Route path={'/chats'} element={<ChatsCont />}/>
+          <Route path={'/message/:id'} element={<SingleChat/>}/>
+          <Route path={'*'} element={<NotFoundPage/>}/>
         </Route>
       </Routes>
 
