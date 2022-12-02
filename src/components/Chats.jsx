@@ -6,34 +6,24 @@ import ListItemText from '@mui/material/ListItemText';
 import FolderSharedIcon from '@mui/icons-material/FolderShared';
 import "../Style/Chats.css"
 import {Link} from "react-router-dom";
+import {useSelector} from "react-redux";
+import {chatsSelector} from "../redux/reducers/chatsSelector";
 
 
 function Chats () {
-
-  const [chats, setChats]= useState([
-    {
-      id:1,
-      name:'Natasha'
-    },
-    {
-      id:2,
-      name:'Miranda'
-    },
-  ])
-
+const chats = useSelector(chatsSelector)
   return (
       <div className='chatsList' >
     {
-      chats.map(el=>{
+      chats.map(chat=>{
         return(<List>
 
                   <ListItem>
                     <ListItemIcon>
                       <FolderSharedIcon/>
                     </ListItemIcon>
-                    <Link to={`/message/${el.id}`}>
-                      <ListItemText key={el.id}
-                                    primary={el.name}/>
+                    <Link key={chat.id} to={`/message/${chat.id}`}>
+                      <ListItemText primary={chat.name}/>
                     </Link>
 
                   </ListItem>

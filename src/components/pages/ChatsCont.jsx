@@ -6,7 +6,7 @@ function ChatsCont () {
   return (
       <div className="conteiner">
         <Chats />
-        {/*<Message/>*/}
+
  </div>
   );
 }
